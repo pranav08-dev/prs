@@ -1,0 +1,54 @@
+/* Apply a bubbly font and gradient color to the body */
+body {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Playful font */
+    background-color: #f0f8ff; /* Light background for contrast */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the heading to look colorful and bubbly */
+h1, h3 {
+    font-size: 3rem; /* Large font size for emphasis */
+    background: linear-gradient(90deg, #ff7eb3,lightgreen, #ff758c, #ff7eb3,lightblue); /* Gradient text */
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for a bubbly effect */
+    margin: 20px 0;
+}
+
+/* Add hover effect to headings */
+h1:hover, h3:hover {
+    transform: scale(1.05); /* Slightly enlarge the text */
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    transition: transform 0.2s, text-shadow 0.2s;
+}
+
+/* Style the buttons to match the bubbly theme */
+button {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /* Rounded edges for a bubbly look */
+    background: linear-gradient(90deg, #ff7eb3, #ff4d6d); /* More contrast */
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Darker shadow for better readability */
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for a 3D effect */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Add hover effect to buttons */
+button:hover {
+    transform: scale(1.1); /* Slightly enlarge the button */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Style the div containing buttons */
+div {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+}
